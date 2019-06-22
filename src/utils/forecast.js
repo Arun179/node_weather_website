@@ -19,7 +19,9 @@ const forecast = (lat, long, callback) => {
             + currently.temperature 
             + " degrees out. There is a " 
         + currently.precipProbability 
-        + "% chance of rain." )
+        + "% chance of rain." 
+        + "The humidity level is " 
+        + currently.humidity +'.' )
      }
  })
 } 
