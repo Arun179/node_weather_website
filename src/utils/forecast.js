@@ -20,8 +20,10 @@ const forecast = (lat, long, callback) => {
             + " degrees out. There is a " 
         + currently.precipProbability 
         + "% chance of rain." 
-        + "The humidity level is " 
-        + currently.humidity +'.' )
+        + "The maximum temperature for today is " 
+        + daily.data[0].temperatureMax + 
+        " degrees and the minimum temperature is " 
+        +daily.data[0].temperatureMin + " degrees.")
      }
  })
 } 
